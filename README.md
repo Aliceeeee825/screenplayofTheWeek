@@ -14,4 +14,4 @@ yarn start
 to view the app locally
 
 ## Description
-This is an app that can be used to help you find the most popular movies and tv shows of the week! Come and explore the new world! 
+This is an app that can be used to help you find the most popular movies and tv shows of the week! Come and explore the new world! View the live page here[https://aliceeeee825.github.io/screenplayofTheWeek/]
