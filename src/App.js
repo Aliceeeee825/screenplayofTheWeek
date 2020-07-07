@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
+import './index.css'
 
 //Page specific imports
 import request from 'request-promise';
@@ -37,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     background: 'black',
-    color: 'primary'
+    color: 'primary',
   },
   paper: {
     padding: theme.spacing(2),
@@ -66,7 +67,10 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: '6%',
     textShadow: '0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6',
     padding: '2%',
-    animation: `$glow 0.4s ${theme.transitions.easing.easeInOut} 4 alternate`
+    animation: `$glow 0.4s ${theme.transitions.easing.easeInOut} 4 alternate`,
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '2rem'
+    },
   },
   "@keyframes glow": {
     "from": {

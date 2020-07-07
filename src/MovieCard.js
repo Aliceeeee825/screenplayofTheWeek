@@ -9,8 +9,8 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
-    background: '#fbf9f9',
-    borderRadius: '10px',
+    background: "#fbf9f9",
+    borderRadius: "10px",
   },
   media: {
     height: 0,
@@ -18,36 +18,36 @@ const useStyles = makeStyles((theme) => ({
   },
   card: {
     position: "relative",
-    transition: 'all 0.5s',
-    '&:hover':{
-      transform: 'scale(1.1)',
-      zIndex: '9'
-    }
+    transition: "all 0.5s",
+    "&:hover": {
+      transform: "scale(1.1)",
+      zIndex: "9",
+    },
   },
   bttn: {
     justifyContent: "center",
     alignItems: "flex-end",
-    flexWrap: 'wrap',
+    flexWrap: "wrap",
   },
-  floatingBttn:{
-    position: 'absolute',
-    top: '20px',
-    background: 'rgba(238,238,238,0.6)',
-    padding: '2px',
-    borderRadius: '10px',
-    border: '1px solid rgba(238,238,238, 0.8)'
+  floatingBttn: {
+    position: "absolute",
+    top: "20px",
+    background: "rgba(238,238,238,0.6)",
+    padding: "2px",
+    borderRadius: "10px",
+    border: "1px solid rgba(238,238,238, 0.8)",
   },
-  favBttn:{
-    left: '70%'
+  favBttn: {
+    left: "70%",
   },
-  deleteBttn:{
-    left: '85%'
+  deleteBttn: {
+    left: "85%",
   },
-  usersBttn:{
-    '&:hover':{
-      backgroundColor: 'transparent'
-    }
-  }
+  usersBttn: {
+    "&:hover": {
+      backgroundColor: "transparent",
+    },
+  },
 }));
 
 function AlbumCard(props) {

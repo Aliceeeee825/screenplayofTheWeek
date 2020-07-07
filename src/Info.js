@@ -44,46 +44,49 @@ export default function CustomizedDialogs(props) {
     const handleClose = () => {
         setOpen(false);
     };
-    const useStyles = makeStyles({
-        root: {
-            maxWidth: 345,
+    const useStyles = makeStyles((theme)=> ({
+      root: {
+        maxWidth: 345,
+      },
+      media: {
+        height: 140,
+      },
+      modal: {
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      },
+      card: {
+        background: "#efeeee",
+        maxWidth: "600px",
+        display: "flex",
+        justifyContent: "space-evenly",
+        padding: "4% 2%",
+        [theme.breakpoints.down("sm")]: {
+          padding: '1%',
         },
-        media: {
-            height: 140,
-        }, 
-        modal: {
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-        },
-        card:{
-          background: '#efeeee',
-          maxWidth: '600px',
-          display: 'flex',
-          justifyContent:'space-evenly',
-          padding: '4% 2%',
-        },
-        info:{
-            position:'absolute',
-            top: 0,
-            right: 0,
-            zIndex: 10,
-            color: '#fff',
-        },
-        rating:{
-          marginBottom: 0,
-          color: '#defe47'
-        },
-        ratingText:{
-          marginTop: '20px'
-        },
-        cardContent:{
-          width: '50%'
-        },
-        cardAction:{
-          padding: 0
-        }
-    });
+      },
+      info: {
+        position: "absolute",
+        top: 0,
+        right: 0,
+        zIndex: 10,
+        color: "#fff",
+      },
+      rating: {
+        marginBottom: 0,
+        color: "#defe47",
+      },
+      ratingText: {
+        marginTop: "20px",
+      },
+      cardContent: {
+        width: "50%",
+      },
+      cardAction: {
+        padding: 0,
+      },
+    }));
 
     const classes = useStyles();
 
