@@ -59,15 +59,14 @@ const useStyles = makeStyles((theme) => ({
     padding: '10px',
   },
   title: {
-    fontSize: "4rem",
+    fontSize: "5rem",
     fontFamily: 'limeLight',
     color: 'white',
     textTransform: 'uppercase',
     border: '5px dotted #defe47',
     marginBottom: '6%',
-    textShadow: '0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6',
-    padding: '2%',
-    animation: `$glow 0.4s ${theme.transitions.easing.easeInOut} 4 alternate`,
+    textShadow: '0 0 10px #fff, 0 0 15px #fff, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6, 0 0 40px #0073e6',
+    animation: `$glow 0.4s ${theme.transitions.easing.easeInOut} 8 alternate`,
     [theme.breakpoints.down('sm')]: {
       fontSize: '2rem'
     },
@@ -77,7 +76,7 @@ const useStyles = makeStyles((theme) => ({
       textShadow: '0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6',
     },
     "to": {
-      textShadow: '0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6, 0 0 60px #0073e6, 0 0 70px #0073e6',
+      textShadow: '0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0073e6, 0 0 50px #0073e6, 0 0 60px #0073e6, 0 0 70px #0073e6, 0 0 80px #0073e6',
     },
   },
   backToTop: {
@@ -160,6 +159,8 @@ function App() {
     const favToBeAppend = items.filter((item) =>{
       return item.id === Number(id)
     })
+
+    console.log(favToBeAppend[0].overview.length)
 
     let currFav = fav
     let currFavStatus = favStatus

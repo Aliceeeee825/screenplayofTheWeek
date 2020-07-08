@@ -15,6 +15,8 @@ import Tooltip from "@material-ui/core/Tooltip";
 import Box from '@material-ui/core/Box';
 import Rating from '@material-ui/lab/Rating';
 
+import ReadMoreAndLess from "react-read-more-less";
+
 const styles = (theme) => ({
     root: {
         margin: 0,
@@ -61,13 +63,14 @@ export default function CustomizedDialogs(props) {
         maxWidth: "600px",
         display: "flex",
         justifyContent: "space-evenly",
+        alignItems: "center",
         padding: "4% 2%",
         [theme.breakpoints.down("sm")]: {
           padding: '1%',
         },
       },
       info: {
-        position: "absolute",
+        // position: "absolute",
         top: 0,
         right: 0,
         zIndex: 10,
@@ -92,11 +95,11 @@ export default function CustomizedDialogs(props) {
 
     return (
       <div>
-        <Button
-          onClick={handleClickOpen}
-          className={classes.info}
-        >
-          <InfoIcon />
+        <Button onClick={handleClickOpen} className={classes.info}>
+          {/* <InfoIcon /> */}
+          <img
+            src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`}
+          ></img>
         </Button>
         <Modal
           aria-labelledby="transition-modal-title"
@@ -112,19 +115,39 @@ export default function CustomizedDialogs(props) {
         >
           <Grid container className={classes.card}>
             <Grid item>
-              <img src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`} alt='movie poster'></img>
+              <img
+                src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`}
+                alt="movie poster"
+              ></img>
             </Grid>
             <Grid item className={classes.cardContent}>
               <Typography gutterBottom variant="h5" component="h2">
-                {movie.media_type === 'tv' ? movie.name : movie.title}
+                {movie.media_type === "tv" ? movie.name : movie.title}
               </Typography>
               <Typography variant="body1" color="textSecondary" component="p">
-                {movie.overview}
+                <ReadMoreAndLess
+                  className="read-more-content"
+                  charLimit={300}
+                  readMoreText="Read more"
+                  readLessText="Read less"
+                >
+                  {movie.overview}
+                </ReadMoreAndLess>
               </Typography>
-              <Typography variant="body2" color="textSecondary" component="p" className={classes.ratingText}>
+              <Typography
+                variant="body2"
+                color="textSecondary"
+                component="p"
+                className={classes.ratingText}
+              >
                 Average rating: {movie.vote_average}
               </Typography>
-              <Box component="fieldset" mb={3} borderColor="transparent" className={classes.rating}>
+              <Box
+                component="fieldset"
+                mb={3}
+                borderColor="transparent"
+                className={classes.rating}
+              >
                 <Rating
                   name="Average Rating"
                   value={movie.vote_average}

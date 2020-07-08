@@ -74,10 +74,8 @@ function AlbumCard(props) {
           <Grid container justify="center" spacing={2}>
               <Grid key={photo.id} item>
               <div className={favStatus[order] === 0 ? classes.card : classes.selectedCard }>
-                  <img src={`https://image.tmdb.org/t/p/w200/${photo.poster_path}`}></img>
                 <Info movie={photo} delete={deleteCard} addFav={addFav}
-                  order={photo.index}
-                  favStatus={favStatus}/>
+                  order={photo.index} favStatus={favStatus}/>
                 </div>
               </Grid>
           </Grid>

@@ -16,7 +16,9 @@
     "react-awesome-reveal": "^2.4.2",
     "react-dom": "^16.13.1",
     "react-modal-image": "^2.5.0",
+    "react-read-more-less": "^0.1.6",
     "react-scripts": "3.4.1",
+    "read-more-react": "^1.0.10",
     "request": "^2.88.2",
     "request-promise": "^4.2.5",
     "sweetalert": "^2.1.2"
