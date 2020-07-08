@@ -66,7 +66,7 @@ export default function CustomizedDialogs(props) {
         alignItems: "center",
         padding: "4% 2%",
         [theme.breakpoints.down("sm")]: {
-          padding: '1%',
+          padding: '10px',
         },
       },
       info: {
@@ -127,7 +127,7 @@ export default function CustomizedDialogs(props) {
               <Typography variant="body1" color="textSecondary" component="p">
                 <ReadMoreAndLess
                   className="read-more-content"
-                  charLimit={300}
+                  charLimit={150}
                   readMoreText="Read more"
                   readLessText="Read less"
                 >
