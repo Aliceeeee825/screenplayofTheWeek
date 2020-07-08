@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/screenplayofTheWeek/static/css/main.d498bfb3.chunk.css",
-    "main.js": "/screenplayofTheWeek/static/js/main.eb1c709e.chunk.js",
-    "main.js.map": "/screenplayofTheWeek/static/js/main.eb1c709e.chunk.js.map",
+    "main.js": "/screenplayofTheWeek/static/js/main.c1e5c011.chunk.js",
+    "main.js.map": "/screenplayofTheWeek/static/js/main.c1e5c011.chunk.js.map",
     "runtime-main.js": "/screenplayofTheWeek/static/js/runtime-main.eea5ea34.js",
     "runtime-main.js.map": "/screenplayofTheWeek/static/js/runtime-main.eea5ea34.js.map",
-    "static/js/2.8d8de095.chunk.js": "/screenplayofTheWeek/static/js/2.8d8de095.chunk.js",
-    "static/js/2.8d8de095.chunk.js.map": "/screenplayofTheWeek/static/js/2.8d8de095.chunk.js.map",
+    "static/js/2.0c2ecd4d.chunk.js": "/screenplayofTheWeek/static/js/2.0c2ecd4d.chunk.js",
+    "static/js/2.0c2ecd4d.chunk.js.map": "/screenplayofTheWeek/static/js/2.0c2ecd4d.chunk.js.map",
     "index.html": "/screenplayofTheWeek/index.html",
-    "precache-manifest.9af570803d411c8e129c48ef33267593.js": "/screenplayofTheWeek/precache-manifest.9af570803d411c8e129c48ef33267593.js",
+    "precache-manifest.2e799037c5c65e22bfaade8c496eea56.js": "/screenplayofTheWeek/precache-manifest.2e799037c5c65e22bfaade8c496eea56.js",
     "service-worker.js": "/screenplayofTheWeek/service-worker.js",
     "static/css/main.d498bfb3.chunk.css.map": "/screenplayofTheWeek/static/css/main.d498bfb3.chunk.css.map",
-    "static/js/2.8d8de095.chunk.js.LICENSE.txt": "/screenplayofTheWeek/static/js/2.8d8de095.chunk.js.LICENSE.txt"
+    "static/js/2.0c2ecd4d.chunk.js.LICENSE.txt": "/screenplayofTheWeek/static/js/2.0c2ecd4d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.eea5ea34.js",
-    "static/js/2.8d8de095.chunk.js",
+    "static/js/2.0c2ecd4d.chunk.js",
     "static/css/main.d498bfb3.chunk.css",
-    "static/js/main.eb1c709e.chunk.js"
+    "static/js/main.c1e5c011.chunk.js"
   ]
 }
