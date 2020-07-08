@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/screenplayofTheWeek/static/css/main.d498bfb3.chunk.css",
-    "main.js": "/screenplayofTheWeek/static/js/main.4bc6990a.chunk.js",
-    "main.js.map": "/screenplayofTheWeek/static/js/main.4bc6990a.chunk.js.map",
+    "main.js": "/screenplayofTheWeek/static/js/main.eb1c709e.chunk.js",
+    "main.js.map": "/screenplayofTheWeek/static/js/main.eb1c709e.chunk.js.map",
     "runtime-main.js": "/screenplayofTheWeek/static/js/runtime-main.eea5ea34.js",
     "runtime-main.js.map": "/screenplayofTheWeek/static/js/runtime-main.eea5ea34.js.map",
     "static/js/2.8d8de095.chunk.js": "/screenplayofTheWeek/static/js/2.8d8de095.chunk.js",
     "static/js/2.8d8de095.chunk.js.map": "/screenplayofTheWeek/static/js/2.8d8de095.chunk.js.map",
     "index.html": "/screenplayofTheWeek/index.html",
-    "precache-manifest.c4edd4a0e58de140e2b4c7649301cfd7.js": "/screenplayofTheWeek/precache-manifest.c4edd4a0e58de140e2b4c7649301cfd7.js",
+    "precache-manifest.9af570803d411c8e129c48ef33267593.js": "/screenplayofTheWeek/precache-manifest.9af570803d411c8e129c48ef33267593.js",
     "service-worker.js": "/screenplayofTheWeek/service-worker.js",
     "static/css/main.d498bfb3.chunk.css.map": "/screenplayofTheWeek/static/css/main.d498bfb3.chunk.css.map",
     "static/js/2.8d8de095.chunk.js.LICENSE.txt": "/screenplayofTheWeek/static/js/2.8d8de095.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.eea5ea34.js",
     "static/js/2.8d8de095.chunk.js",
     "static/css/main.d498bfb3.chunk.css",
-    "static/js/main.4bc6990a.chunk.js"
+    "static/js/main.eb1c709e.chunk.js"
   ]
 }
