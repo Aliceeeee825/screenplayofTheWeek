@@ -5,6 +5,7 @@ import InfoIcon from '@material-ui/icons/Info';
 import Typography from '@material-ui/core/Typography';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import DeleteOutlinedIcon from '@material-ui/icons/DeleteOutlined';
+import CloseIcon from "@material-ui/icons/Close";
 
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
@@ -22,12 +23,7 @@ const styles = (theme) => ({
         margin: 0,
         padding: theme.spacing(2),
     },
-    closeButton: {
-        position: 'absolute',
-        right: theme.spacing(1),
-        top: theme.spacing(1),
-        color: theme.palette.grey[500],
-    },
+    
 });
 
 
@@ -46,7 +42,7 @@ export default function CustomizedDialogs(props) {
     const handleClose = () => {
         setOpen(false);
     };
-    const useStyles = makeStyles((theme)=> ({
+    const useStyles = makeStyles((theme) => ({
       root: {
         maxWidth: 345,
       },
@@ -65,8 +61,9 @@ export default function CustomizedDialogs(props) {
         justifyContent: "space-evenly",
         alignItems: "center",
         padding: "4% 2%",
+        position: "relative",
         [theme.breakpoints.down("sm")]: {
-          padding: '10px',
+          padding: "10px",
         },
       },
       info: {
@@ -79,15 +76,28 @@ export default function CustomizedDialogs(props) {
       rating: {
         marginBottom: 0,
         color: "#defe47",
+        marginLeft: '-5%'
       },
       ratingText: {
         marginTop: "20px",
       },
       cardContent: {
         width: "50%",
+        [theme.breakpoints.down("sm")]: {
+          width: '85%',
+          textAlign: 'center',
+          margin: '0 auto'
+        },
       },
       cardAction: {
         padding: 0,
+      },
+      closeButton: {
+        position: "absolute",
+        right: theme.spacing(1),
+        top: theme.spacing(1),
+        color: theme.palette.grey[500],
+        cursor: "pointer",
       },
     }));
 
@@ -96,7 +106,6 @@ export default function CustomizedDialogs(props) {
     return (
       <div>
         <Button onClick={handleClickOpen} className={classes.info}>
-          {/* <InfoIcon /> */}
           <img
             src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`}
           ></img>
@@ -114,6 +123,7 @@ export default function CustomizedDialogs(props) {
           }}
         >
           <Grid container className={classes.card}>
+            <CloseIcon onClick={handleClose} className={classes.closeButton}/>
             <Grid item>
               <img
                 src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`}
