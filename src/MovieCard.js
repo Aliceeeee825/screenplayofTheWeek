@@ -24,6 +24,15 @@ const useStyles = makeStyles((theme) => ({
       zIndex: "9",
     },
   },
+  selectedCard: {
+    position: "relative",
+    transition: "all 0.5s",
+    boxShadow: '0 0 15px #7700a6',
+    "&:hover": {
+      transform: "scale(1.1)",
+      zIndex: "9",
+    },
+  },
   bttn: {
     justifyContent: "center",
     alignItems: "flex-end",
@@ -57,13 +66,14 @@ function AlbumCard(props) {
     const deleteCard = props.delete
     const addFav = props.addFav
     const favStatus = props.favStatus
+    const order = props.order
 
     return (
       <Grid container className={classes.root} spacing={2}>
         <Grid item xs={12}>
           <Grid container justify="center" spacing={2}>
               <Grid key={photo.id} item>
-                <div className={classes.card}>
+              <div className={favStatus[order] === 0 ? classes.card : classes.selectedCard }>
                   <img src={`https://image.tmdb.org/t/p/w200/${photo.poster_path}`}></img>
                 <Info movie={photo} delete={deleteCard} addFav={addFav}
                   order={photo.index}

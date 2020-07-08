@@ -84,6 +84,8 @@ const useStyles = makeStyles((theme) => ({
     position: "fixed",
     right: "20px",
     top: "50%",
+    width: '40px',
+    height: '40px'
   },
   mediaType:{
     marginBottom: '5%',
