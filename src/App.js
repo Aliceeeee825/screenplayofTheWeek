@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
     padding: '10px',
   },
   title: {
-    fontSize: "5rem",
+    fontSize: "4rem",
     fontFamily: 'limeLight',
     color: 'white',
     textTransform: 'uppercase',
