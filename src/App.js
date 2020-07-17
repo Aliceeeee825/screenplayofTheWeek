@@ -230,8 +230,8 @@ function App() {
                     centered
                   >
                     <Tab label="All" className={classes.media} onClick={() => { mediaType('all') }} />
-                    <Tab label="Movies" className={classes.media} onClick={() => { mediaType('tv') }}/>
-                    <Tab label="TV shows" className={classes.media} onClick={() => { mediaType('movie')}}/>
+                    <Tab label="TV Shows" className={classes.media} onClick={() => { mediaType('tv') }}/>
+                    <Tab label="Movies" className={classes.media} onClick={() => { mediaType('movie')}}/>
                   </Tabs>
                 </Paper>
   
